@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1, shrink-to-fit=no"
+         />
+    <!-- Boostrap du CSS-->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"
+          />
+    <!-- Lien pour les font-awesome-->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+          />
+    
+    <link rel="stylesheet"
+          href="rouen.css"/>
+    <title>METEO API</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-6  my-3">
+                <form>
+                    <div class="form-group">
+                        <!-- le id inputcity permet d'attraper pour le js 8.14-->
+                        <input type="text" class="form-control" id="inputCity"/>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-info btn-block">
+                        Rechercher
+                    </button>
+                </form>
+            </div>
+            
+            <div class="col-12 col-sm-6 d-flex justify-content-center my-3">
+                <div class="box-container">
+                    <div id="city" class="box"></div>
+                    <div id="temp" class="box"></div>
+                    <div id="humidity" class="box"></div>
+                    <div id="wind" class="box"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src = "./rouen.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Programme de travail json</title>
+        </head>
+        
+        <body>
+            <script>
+                fetch ('https://geo.api.gouv.fr/communes?nom=Soissons&fields=population&format=json&geometry=centre ')
+                    .then(response=>response.json())
+                    .then(data=>console.log(data))
+                    
+            </script>
+        </body>
+    </html>

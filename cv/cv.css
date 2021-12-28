@@ -1,0 +1,91 @@
+img{
+    width: 100%;
+}
+/*deux manipulations pour avoir le background color gris; body et dans .page en white*/
+body{
+    background-color: grey;
+}
+.page{
+    width: 780px;
+    height: 3000px;
+    margin:auto;
+    font-family: calibri, Tahoma, sans-serif;
+    font-size: 16px;
+    border: 5px solid #3388CC;
+    border-radius: 10px;
+    box-shadow: 2px 3px 3px black;
+    /*pour réduire la boite utiliser le padding*/
+    padding: 50px;
+    background-color:white;
+    
+}
+.infopersophoto{
+    height: 160px;
+}
+.infoperso{
+    float: left;
+}
+.photo{
+    margin-left: 950px;
+}
+.rotation {
+   display: block;
+   position: fixed;
+   top:20%;
+   left:90%;
+   width: 150px;
+   height: 150px;
+   margin: -60px 0 0 -280px;
+   -webkit-transition: -webkit-transform 1s;
+}
+
+.rotation:hover{
+   -webkit-transform: rotate(360deg) translateZ(0);
+}
+.section{
+    margin-bottom: 70px;
+    text-align: justify;
+}
+/*pseudo-format colorer la section avec la souris*/
+.section:hover{
+    color: #0000ee;
+}
+.sec_date{
+    float: left;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 15px;
+}
+/*intéressant, on part du bord à gauche et non de la boite*/
+.sec_info_droite{
+    margin-left: 170px;
+}
+h2{
+    font-size: 28px;
+    color: #3388BB;
+    border-bottom: 3px solid #3388FF;
+}
+/*Associé au span*/
+.titre{
+    font-size: 20px;
+    font-weight: bold;
+}
+/*Pour réajuster et coller au id */
+
+strong{
+    font-size:25px;
+}
+#langue p{
+    float: left;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 60px;
+    margin-top: 8px;
+}
+#langue1 p{
+    float: left;
+    font-weight: bold;
+    font-size: 20px;
+   margin-left: -80px;
+    margin-top:45px;
+}

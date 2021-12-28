@@ -1,0 +1,163 @@
+/*margin et padding à 0, important pour une RAZ*/
+body{
+    font-family: Calibri, serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*on étire le menu nav tout le long de la feuille+fond en gris foncé 424558*/
+
+nav{
+    width: 100%;
+    background-color:#424558;
+}
+/*écrarte les menus principaux et met les écritures en blanc*/
+nav>ul>li>a {
+    padding:20px 30px;
+    color:white;
+}
+/*on ne travaille que sur les ul généraux*/
+nav > ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*élément important pour faire apparaitre les menus 14'30, rétabli la hauteur du menu*/
+
+nav > ul::after{
+    content: "";
+    display: block;
+    clear:both;
+}
+/*pour mettre les  menus principaux côte à côte*/
+nav > ul > li{
+    float: left;
+    position:relative;
+}
+    
+/*enlèvement des puces*/
+nav li{
+    list-style-type: none;
+}
+/*disparaître les sous menus*/
+.submenu {
+   display: none;
+}
+
+/*supprime le souslignement des menus principaux*/
+nav a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+/*qd on passe la souris sur les menus princip nav li doit apparaitre les sousmenu .submenu en un seul bloc, position juste en dessous*/
+/* dc top 100% à gch 0px pas de padding et z-index*/
+
+nav li:hover .submenu{
+    display: inline-block; /*le bloc réapparait*/
+    position: absolute; /*on le positionne facile et juste en dessous*/
+    top:100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}/*les contenus s'affichent au dessus, A ESSAYER*/
+
+/*paramétrage des sous-menus qui apparaissent, les .submenu li*/
+/*petite bordure en bas en gris CCC*/
+.submenu li{
+    border-bottom: 5px solid #CCC;
+}
+
+/* paramétrage en gris foncé*/
+.submenu li a{
+    padding: 15px 30px;
+    font-size: 13px;
+    color:#222538;
+    width: 270px;
+}
+/*met en couleur orange quand on est dessus avec la souris et même couleur*/
+   .menu-coord:hover{
+   border-top: 5px solid #e44d26;
+   background-color: rgba(228,77,38,0.15);
+   }
+   
+   .menu-formapro:hover{
+   border-top: 5px solid #e44d26;
+   background-color: rgba(228,77,38,0.15);
+   }
+   .menu-expepro:hover{
+   border-top: 5px solid #e44d26;
+   background-color: rgba(228,77,38,0.15);
+   
+   }
+   .menu-formabelt:hover{
+   border-top: 5px solid #e44d26;
+   background-color: rgba(228,77,38,0.15);
+   }
+   
+   .menu-langue:hover{
+   border-top: 5px solid #e44d26;
+   background-color: rgba(228,77,38,0.15);
+   }
+   
+   .menu-interet:hover{
+   border-top: 5px solid #e44d26;
+   background-color: rgba(228,77,38,0.15);
+   }
+   /*colorise les sousmenu qui apparaissent*/
+   .menu-coord .submenu{
+      background-color: rgb(230,100,40);
+   }
+   
+   .menu-formapro .submenu{
+      background-color: rgb(230,100,40);
+   }
+   
+   .menu-expepro .submenu{
+      background-color: rgb(230,100,40);
+   }
+   
+   .menu-formabelt .submenu{
+      background-color: rgb(230,100,40);
+   }
+   
+   .menu-langue .submenu{
+      background-color: rgb(230,100,40);
+   }
+   
+   .menu-interet .submenu{
+      background-color: rgb(230,100,40);
+   }
+      
+   /* qd on passe la souris sur les écrits ça devient gras et blanc*/
+   
+   .submenu li:hover a{
+      color:#EEE;
+      font-weight: bold;
+   }
+   
+   .menu-coord .submenu li:hover{
+      background-color: rgb(210,77,60);
+   }
+   
+   .menu-formapro .submenu li:hover{
+      background-color: rgb(210,77,60);
+   }
+   
+   .menu-expepro .submenu li:hover{
+      background-color: rgb(210,77,60);
+   }
+   
+   .menu-formabelt .submenu li:hover{
+      background-color: rgb(210,77,60);
+   }
+   
+   .menu-langue .submenu li:hover{
+      background-color: rgb(210,77,60);
+   }
+   
+   .menu-interet .submenu li:hover{
+      background-color: rgb(210,77,60);
+   }
+   
+  

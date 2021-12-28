@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Météo à Soissons</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="ip.css"/>            
+        </head>
+        
+        <body>
+            <h1>Affichage météo sur Soissons</h1>
+            <p>Température</p>
+            <div id="debug"></div>
+            <script>
+            window.fetch("https://api.openweathermap.org/data/2.5/weather?q=Soissons&lang=fr&units=metric&appid=8417760ba8724050ae99eca6e6caa318 ")
+                .then(res=>res.json())
+                .then(data=>{
+                    console.log(data.main.temp)
+                    document.querySelector("#debug").innerText =data.main.temp                    
+                })
+
+            </script>
+
+            <div id="cond"></div>
+            <p>Conditions météo</p>
+            <script>
+            window.fetch("https://api.openweathermap.org/data/2.5/weather?q=Soissons&lang=fr&units=metric&appid=8417760ba8724050ae99eca6e6caa318 ")
+                .then(res=>res.json())
+                .then(data=>{
+                  console.log(data.weather[0].main )
+                  document.querySelector("#cond").innerText =data.weather[0].main
+              })
+
+            </script>
+            
+            <div id="city"></div>
+            <p>Nom de la Ville</p>
+            <script>
+            window.fetch("https://api.openweathermap.org/data/2.5/weather?q=Soissons&lang=fr&units=metric&appid=8417760ba8724050ae99eca6e6caa318 ")
+                .then(res=>res.json())
+                .then(data=>{
+                    console.log(data.name )
+                    document.querySelector("#city").innerText =data.name
+                   
+              })
+function displayweather (data) {
+                    const name=data.name;
+                    
+                    document.querySelector('#city').textContent = name;
+                    //code
+                }
+            </script>
+            
+            <script>
+                function display(data) {
+                    const name=data.name;
+                    
+                    document.querySelector('#city');textContent = name;
+                    //code
+                }
+            </script>
+            <!--
+            <script src="./ip.js"></script>
+            -->
+        </body>
+    </html>
