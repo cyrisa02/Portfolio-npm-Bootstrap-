@@ -1,0 +1,122 @@
+*{
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   font-family: "montserrat";
+}
+
+
+img{
+    width: 100%;
+}
+/*deux manipulations pour avoir le background color gris; body et dans .page en white*/
+body{
+    background-color: grey;
+}
+
+.rotation {
+   display: block;
+   position: fixed;
+   /*position de l'image*/
+   top:20%;
+   left:50%;
+   width: 150px;
+   height: 150px;
+   margin: -60px 0 0 -280px;
+   -webkit-transition: -webkit-transform 1s;
+}
+
+.rotation:hover{
+   -webkit-transform: rotate(360deg) translateZ(0);
+}
+
+.rotation2 {
+   display: block;
+   position: fixed;
+   /*position de l'image*/
+   top:50%;
+   left:50%;
+   width: 150px;
+   height: 150px;
+   margin: -60px 0 0 -280px;
+   -webkit-transition: -webkit-transform 1s;
+}
+
+.rotation2:hover{
+   -webkit-transform: rotate(360deg) translateZ(0);
+}
+
+.rotation3 {
+   display: block;
+   position: fixed;
+   /*position de l'image*/
+   top:20%;
+   left:70%;
+   width: 150px;
+   height: 150px;
+   margin: -60px 0 0 -280px;
+   -webkit-transition: -webkit-transform 1s;
+}
+
+.rotation3:hover{
+   -webkit-transform: rotate(360deg) translateZ(0);
+}
+
+.rotation4 {
+   display: block;
+   position: fixed;
+   /*position de l'image*/
+   top:50%;
+   left:70%;
+   width: 150px;
+   height: 150px;
+   margin: -60px 0 0 -280px;
+   -webkit-transition: -webkit-transform 1s;
+}
+
+.rotation4:hover{
+   -webkit-transform: rotate(360deg) translateZ(0);
+}
+/*Rotation Y*/
+.middle{
+   position: absolute;
+   top:70%;
+   left:80%;
+   transform: translate(-50%,-50%)
+}
+
+.card{
+   cursor: pointer;
+   width: 340px;
+   height: 480px;
+}
+
+.front,.back{
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   backface-visibility: hidden;
+   position: absolute;
+   transition: transform .6s linear;
+}
+
+.front img{
+   height: 80%;
+}
+
+.front {
+      transform: perspective(600px) rotateY(0deg);
+}
+.back {
+   height: 100%;
+   transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover > .front{
+   transform: perspective(600px) rotateY(-180deg);
+}
+
+.card:hover > .back{
+   transform: perspective(600px) rotateY(0deg);
+}
+

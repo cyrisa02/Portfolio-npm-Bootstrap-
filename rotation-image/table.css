@@ -1,0 +1,27 @@
+/*Mettre les bordures d'abord sur td, les cellules ne st pas collées*/
+td, th{
+    border:1px solid black;
+}
+
+/*Collage des cellules inherit */
+
+table{
+    border-collapse: collapse;
+}
+
+body{
+    background: radial-gradient(white,red);
+	font-family:tahoma,calibri,sans-serif;
+}
+
+/*body{
+    background: linear-gradient(green,red);
+}*/
+
+/*placer des images qui restent fixes, mais le menu bouge
+ *body{
+    background:url("piaf.jpg") fixed no-repeat top left,
+                url("chaton.jpg") fixed no-repeat top right,
+                url("scarabe.jpg") fixed no-repeat bottom left;
+    
+ }*/

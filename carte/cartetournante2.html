@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0c1f1238f1.js" crossorigin="anonymous"></script>
+
+    <title>Carte </title>
+</head>
+<body>
+    <div class="container">
+    <div class="laCarte">
+        <div class="carte">
+            <div class="divImg"></div>
+            <div class="titre">
+                Tartes aux pommes
+                <hr>
+            </div>
+            <div class="tab min">
+                <i class="fas fa-hourglass-start" alt="sablier"class="icone"></i>
+                <span>20</span>
+            </div>
+            <div class="tab ing">
+                <i class="fas fa-list" alt="ingrédients"class="icone"></i>
+                <span>8</span>
+            </div>
+            <div class="tab pers">
+                <i class="fas fa-users" alt="Nombre de personnes" class="icone"></i>
+                <span>4</span>
+            </div>
+            <div class="info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa obcaecati sapiente odio laborum quasi repudiandae odit et id velit aspernatur.
+            </div>
+
+            
+        </div>
+        <div class="derriere">
+            <div class="divImg2"></div>
+            <div class="btnSection"><a href="#">La recette</a>
+            </div>
+        </div>
+    </div>
+</div>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: #262626;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+            .container {
+                 position:absolute;
+                 width: 250px;
+                 height: 320px;
+                 top:50%;
+                 left:50%;
+                 transform:translate(-50%,-50%);
+}
+
+            .laCarte {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                transform-style: preserve-3d;
+                transition: all 1.5s ease;
+            }
+            .laCarte:hover{
+                transform: rotateY(180deg);
+            }
+
+            .carte {
+                position: absolute;
+                top:40%;
+                left:50%;
+                width: 330px;
+                height: 530px;
+                transform: translate(-50%,-50%);
+                backface-visibility: hidden;
+                background: #f1f1f1;
+                display: grid;
+                /*2 lignes de 100 , 1 ligne de 50 "le titre", 2 lignes de 100, 1 lignes de 80/ puis 3 colonnes de 110px*/
+                /* voir avec le width colonne 330 et le height 530- lignes rangée*/
+                grid-template: repeat(2,100px) 50px repeat(2,100px) 80px / repeat(3,110px);
+                border-radius: 10px;
+                
+            }
+            .derriere {
+                position: absolute;
+                top:-40%;
+                left:30%;
+                width: 330px;
+                height: 530px;
+                backface-visibility: hidden;
+                text-align: center;
+                background: chartreuse;
+                color: darkblue;
+                transform: rotateY(180deg);
+                display: grid;
+                grid-template: 250px 280px / 115px 115px ;
+                border-radius: 10px;
+            }
+            .divImg{
+                /*debut rangée / debut col /fin rang / fin col attention 3 piquets 2 intervalles */
+                grid-area: 1 / 1 / 3 / 4;
+                background: url(ressource/tarte.jpg);
+                background-size: cover;
+                background-position: 50% 50%;
+                filter: brightness(90%);
+                box-shadow: 0px 10px 40px (0,0,0,0.5);
+                border-radius: 10px;
+
+            }
+
+            .divImg2{
+                grid-area: 1 / 1 / 1 / 4;
+                background: url(ressource/pomme.jpg);
+                background-size: cover;
+                background-position: 50% 50%;
+                filter: brightness(90%);
+                box-shadow: 0px 10px 40px (0,0,0,0.5);
+                border-radius: 10px;
+
+            }
+
+            .titre {
+                grid-area: 3 / 1 / 4 /4;
+                font-size:24px;
+                font-weight: 500;
+                padding: 20px;
+            }
+        
+            hr {
+                opacity: 0.8;
+            }
+
+            .tab {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 10px;
+            }
+
+            .icone {
+                width: 24px;
+                margin-right: 10px;
+            }
+            
+
+            span {
+                font-weight: 600;
+                padding: 5px;
+            }
+
+            .info {
+                grid-area: 5 / 1 / 6 / 4;
+                padding: 5px 25px;
+                font-size: 14px;
+                text-align: justify;
+            }
+
+            .btnSection {
+                grid-area: 2/1/4/4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .btnSection a {
+                display: block;
+                width: 200px;
+                height: 30px;
+                background: rgb(223, 35, 35);
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color:#e2e2e2;
+                border-radius: 5px;
+            }
+    </style>
+    
+</body>
+</html>

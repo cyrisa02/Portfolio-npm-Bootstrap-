@@ -1,0 +1,58 @@
+body{
+    margin:0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.diaporama1 {
+    /*centrage*/
+    margin: 0 auto;
+    /*largeur*/
+    width: 500px;
+    height: 500px;
+    border: 3px solid black;
+    /*image de fond*/
+    background-image: url("img/image1.jpg");
+    
+    animation-name: diapo1;
+    animation-duration:15s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    animation-direction:normal;
+    }
+    
+    /*permet que le background reste une image, un diapo*/
+    @keyframes diapo1 {
+        0%{background-image: url("img/image1.jpg"); }
+        20%{background-image: url("img/image2.jpg"); }
+        40%{background-image: url("img/image3.jpg"); }
+        60%{background-image: url("img/image4.jpg"); }
+        80%{background-image: url("img/image5.jpg"); }
+    }
+    
+    .diaporama2{
+         /*centrage*/
+    margin: 0 auto;
+    /*largeur*/
+    width: 100px;
+    height: 250px;
+    border: 3px solid black;
+    /*image de fond*/
+    background-image: url("img/photosinge.jpg");
+    
+    animation-name: diapo2;
+    animation-duration:12s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    animation-direction:normal;
+        
+    }
+     @keyframes diapo2 {
+        0%{background-position: 0px 0px; }
+        /*bloque l'image pdt 5% du temps*/
+        5%{background-position: 0px 0px; }
+        31%{background-position: -20px 0px; }
+        64%{background-position: -40px 0px; }
+        100%{background-position: -100px 0px; }
+     }
+     

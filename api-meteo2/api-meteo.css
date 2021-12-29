@@ -1,0 +1,44 @@
+body{
+    background: linear-gradient(90deg,blue,white,yellow, red, blue,white);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.box-container{
+    width: 280px;
+    height: 280px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 140px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+#city {
+    background-color: rgba(41,128,185,0.75);
+}
+
+#temp {
+    background-color: rgba(43,78,101,0.75);
+}
+
+#humidity {
+    background-color: rgba(52,152,219,0.75);
+}
+
+#wind {
+    background-color: rgba(143,146,154,0.75);
+}
+
+
+

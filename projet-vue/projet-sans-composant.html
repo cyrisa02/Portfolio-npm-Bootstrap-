@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interface de commande</title>
+    <!-- CDN Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!-- Utilisation de vue en CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <!-- Implémentation en premier: création de l'id app-->
+    <div id="app">
+      <div class="container">
+        <div class="row">
+          <p class="jumbotron">
+            Login : <input type="text" v-model="user" /> | Vous êtes connecté en
+            tant que {{user}}
+          </p>
+        </div>
+        <h1 class="display-4" v-if="commandes.length > 0">
+          Produits commandés
+        </h1>
+        <ul>
+          <li v-for="commande in commandes">{{commande}}</li>
+        </ul>
+        <h1 v-bind:class="affichage">Produits disponibles</h1>
+        <div class="row">
+          <div class="col-3" v-for="produit in produits">
+            <p class="jumbotron">
+              {{produit}}<br />
+              <button v-on:click="commander(produit)">Commander</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Création de vue et initialisation avec el pour element-->
+    <!-- on peut controler avec F12 que vue tourne-->
+    <!-- en 2 oncrée les data = état puis rendu déclar dans div avec user-->
+    <!-- je peux controler depuis la console F12 ex: app.user="Isa"-->
+    <!-- en 3 faire circuler les info entre div et script avec le input login-->
+    <!-- création des directives v-model dans div avec affichage en tant réel!-->
+    <!-- Création du tab de produits et v-for-->
+    <!-- créer un tableau vide pour la commande grâce à methods console.log ("ca marche")-->
+    <!-- création du bouton commander dasn le div et directive!!! v-on:click-->
+    <!-- suffit jsute de mettre produit dans "commander(produit)"-->
+    <!-- pour voir si ca marche mettre dans fct(produit) et console.log(produit)-->
+    <!--push remplit le tableau dans la fonction + ne pas oublier le this-->
+    <!-- afficher le tableau: cf h1 produits commandés, creer une liste et v-for-->
+    <!-- le v-if est intéressant car dés que j'ai des lettres apparait produits cdés-->
+    <!-- v-bind relie une classe CSS avec affichage et dans le data-->
+    <script>
+      var app = new Vue({
+        el: "#app",
+        data: {
+          user: "Cyril",
+          produits: ["Pizza", "Cheese", "Hamburger", "Tacos"],
+          commandes: [],
+          affichage: "display-3",
+        },
+        methods: {
+          commander: function (produit) {
+            /*console.log(produit);*/
+            this.commandes.push(produit);
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
