@@ -1,41 +1,40 @@
-body{
-    font-family: "Trebuchet MS";
-    /*positionne le bloc texte au centre de la feuille vh=%*/
-    height: 100vh;
-    /*Supprimer la barre scroll*/
-    overflow: hidden;
-    /*Centrage de la flexbox*/    
-    display: flex;
-    /*positionne les écitures en bloc au centre*/
-    justify-content: center;
-    /*centrer en hauteur*/
-    align-items: center;
-    /*centrage du mots du texte dans le bloc */
-    text-align: center;
-}
-    
-
-h1{
-    font-size: 40px;
-    background-color: red;
+body {
+  font-family: "Trebuchet MS";
+  /*positionne le bloc texte au centre de la feuille vh=%*/
+  height: 100vh;
+  /*Supprimer la barre scroll*/
+  overflow: hidden;
+  /*Centrage de la flexbox*/
+  display: flex;
+  /*positionne les écitures en bloc au centre*/
+  justify-content: center;
+  /*centrer en hauteur*/
+  align-items: center;
+  /*centrage du mots du texte dans le bloc */
+  text-align: center;
 }
 
-i.wi{
-    font-size: 50px;
-    /* écarte les lignes de texte par rapport au nuage vers le haut*/
-    line-height: 150px;
+h1 {
+  font-size: 40px;
+  background-color: red;
 }
 
-h2{
-    font-size: 30px;
+i.wi {
+  font-size: 50px;
+  /* écarte les lignes de texte par rapport au nuage vers le haut*/
+  line-height: 150px;
 }
 
-.tooltip{
-    /*display:none cache le texte entrez une ville*/
-    display:none;
+h2 {
+  font-size: 30px;
 }
 
-.cond{
-    background-color: green;
-    font-size: 70px;
+.tooltip {
+  /*display:none cache le texte entrez une ville*/
+  display: none;
+}
+
+.cond {
+  background-color: green;
+  font-size: 70px;
 }

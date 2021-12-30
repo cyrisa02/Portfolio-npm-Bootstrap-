@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="utf-8">
-            <title>Programme de travail json</title>
-        </head>
-        
-        <body>
-            <script>
-                fetch ('https://api.openweathermap.org/data/2.5/weather?q=Soissons&lang=fr&units=metric&appid=8417760ba8724050ae99eca6e6caa318 ')
-                    .then(response=>response.json())
-                    .then(data=>console.log(data))
-                    
-            </script>
-        </body>
-    </html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Programme de travail json</title>
+</head>
+
+<body>
+    <script>
+        fetch('https://api.openweathermap.org/data/2.5/weather?q=Soissons&lang=fr&units=metric&appid=8417760ba8724050ae99eca6e6caa318 ')
+            .then(response => response.json())
+            .then(data => console.log(data))
+
+    </script>
+</body>
+
+</html>

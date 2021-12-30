@@ -1,45 +1,44 @@
-@keyframes wheeeee { 
-    from { left:0  ;
-      bottom: 0;
-    }
+@keyframes wheeeee {
+  from {
+    left: 0;
+    bottom: 0;
+  }
 
-    to {bottom: 100%;
-    
-    left:100% ;
-    
-color: #FF5ACD;}
+  to {
+    bottom: 100%;
+
+    left: 100%;
+
+    color: #ff5acd;
+  }
 }
 
 .my-profile {
-    border-radius: 12px;
-    box-shadow: 5px 5px 15px black;
-
+  border-radius: 12px;
+  box-shadow: 5px 5px 15px black;
 }
 
 .profile-pic-wrapper {
-    border-radius: 20px;
-    background:linear-gradient(45deg, #FBDA61, #FF5ACD);
-    
-
+  border-radius: 20px;
+  background: linear-gradient(45deg, #fbda61, #ff5acd);
 }
 
 #profile-pic {
-    border-radius: 50%;
-    border: 6px solid hsl(0, 0%, 100%);
-
+  border-radius: 50%;
+  border: 6px solid hsl(0, 0%, 100%);
 }
 
 #profile-name {
-  color:rgb(0, 0, 255);
+  color: rgb(0, 0, 255);
 }
 
 /* - .favorite-place doit avoir l'image de fond suivante () alignée sur le haut et qui couvre toute la <div>
  */
 .favorite-place {
-background-image: url(http://placeimg.com/640/480/nature);
-border-radius: 0 0 12px 12px;
-background-position: top;
-background-size:cover ;
+  background-image: url(http://placeimg.com/640/480/nature);
+  border-radius: 0 0 12px 12px;
+  background-position: top;
+  background-size: cover;
 }
 
 .plane {
@@ -51,58 +50,25 @@ background-size:cover ;
   bottom: 0;
 }
 
-
-
-
 .like-button {
   transition: transform 0.5s ease;
 }
 
 .like-button:hover,
 .like-button:focus {
-    transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
 }
 
 /*
 - .like-button doit devenir plus gros (utilisez transform : scale(1.1, 1.1)) au passage de la souris pour montrer à l'utilisateur qu'il peut liker l'image !
 */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Ce code ne fait pas partie de l'exercice et sert juste pour l'affichage de cet exemple */
 
 * {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-    "Droid Sans", "Helvetica Neue", sans-serif;
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
 }
 
 .card {
@@ -128,7 +94,8 @@ background-size:cover ;
   padding: 0 20px;
 }
 
-h2, h5 {
+h2,
+h5 {
   margin: 4px 0;
 }
 

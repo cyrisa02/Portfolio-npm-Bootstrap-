@@ -1,78 +1,83 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <title>Formulaire</title>
-            <meta charset="utf-8"/>
-        </head>
-        <body>
-		<script>
-		alert("Cette page présente un ensemble d'option pour créer un formulaire")
-		</script>
-            <form method="post" action="traitement.php">
-                <p>
-                    <fieldset>
-                        <legend>Information personnelle</legend>
-                    <label for="pseudo">Saisir votre pseudo</label>
-                    <!-- il y a plein de type input à regarder sur internet
+<html>
+
+<head>
+    <title>Formulaire</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <script>
+        alert("Cette page présente un ensemble d'option pour créer un formulaire")
+    </script>
+    <form method="post" action="traitement.php">
+        <p>
+        <fieldset>
+            <legend>Information personnelle</legend>
+            <label for="pseudo">Saisir votre pseudo</label>
+            <!-- il y a plein de type input à regarder sur internet
                     placeholder donne un exemple
                     required: oblige à remplir
                     fieldset+legend permet de donner des catégories au formulaire-->
-                    
-                    <input type="text" name="pseudo" id="pseudo" placeholder="Pierre"/>
-                    </br></br>
-                    <label for="pass">Saisir votre mot de passe</label>
-                    <input type="password" name="pass" id="pass" required="required"/>
-                    </br></br>
-                    </fieldset></br>
-                    <label for="email">Saisir votre adresse mail</label>
-                    <input type="email" name="email" id="email"/>
-                    </br></br>
-                    <label for="site">Saisir l'adresse de votre site web</label>
-                    <input type="url" name="site" id="site"/>
-                    </br></br>
-                    <label for="telephone">Saisir votre numéro de téléphone</label>
-                    <input type="tel" name="telephone" id="telephone"/>
-                    </br></br>
-                    <label for="commentaire">Avez vous des commentaires longs</label>
-                    <textarea>
-                        
+
+            <input type="text" name="pseudo" id="pseudo" placeholder="Pierre" />
+            </br></br>
+            <label for="pass">Saisir votre mot de passe</label>
+            <input type="password" name="pass" id="pass" required="required" />
+            </br></br>
+        </fieldset></br>
+        <label for="email">Saisir votre adresse mail</label>
+        <input type="email" name="email" id="email" />
+        </br></br>
+        <label for="site">Saisir l'adresse de votre site web</label>
+        <input type="url" name="site" id="site" />
+        </br></br>
+        <label for="telephone">Saisir votre numéro de téléphone</label>
+        <input type="tel" name="telephone" id="telephone" />
+        </br></br>
+        <label for="commentaire">Avez vous des commentaires longs</label>
+        <textarea>
+
                     </textarea>
-                    <!-- créer un css avec
+        <!-- créer un css avec
                     textarea {
                     width:300px;
                     heigth:100px;}-->
-                    </br> </br>
-                    Avez vous des sports favoris?</br>
-                    <input type="checkbox" name="course" id="course"/>
-                    <label for="course">Course à pied</label></br>
-                    <input type="checkbox" name="natation" id="natation"/>
-                    <label for="natation">Natation</label></br>
-                    <!-- checked c'est précoché-->
-                    <input type="checkbox" name="cyclisme" id="cyclisme" checked="checked"/>
-                    <label for="cyclisme">Cyclisme</label></br></br>
-                    <!--Une seule case à cocher-->
-                    Quelle viennoiserie préférez-vous?</br>
-                    <input type="radio" name="viennoiserie" value="croissant" id="croissant"/>
-                    <label for="croissant">Les croissants</label></br>
-                    <input type="radio" name="viennoiserie" value="chocolat" id="chocolat" checked="checked"/>
-                    <label for="croissant">Les pains au chocolat</label></br>
-                    <input type="radio" name="viennoiserie" value="raisin" id="raisin"/>
-                    <label for="croissant">Les pains au raisin</label></br></br>
-                    Choisissez votre pays
-                    <select name="pays" id="pays">
-                        <optgroup label="Europe">
-                        <option value="France">France</option
-                        <option value="Irlande">Irlande</option>
-                        <option value="Allemagne">Allemagne</option>
-                        <option value="Angleterre">Angleterre</option></optgroup>
-                        <optgroup label="Asie">
-                        <option value="Chine">Chine</option></optgroup>
-                        <optgroup label="Amérique">
-                        <option value="USA">USA</option></optgroup>
-                    </select></br></br>
-                    <!-- Pour envoyer le formulaire vers une page php qui nous manque-->
-                    <input type="submit" value="Envoyer votre formulaire"/>            
-                </p>
-            </form>
-        </body>
-    </html>
+        </br> </br>
+        Avez vous des sports favoris?</br>
+        <input type="checkbox" name="course" id="course" />
+        <label for="course">Course à pied</label></br>
+        <input type="checkbox" name="natation" id="natation" />
+        <label for="natation">Natation</label></br>
+        <!-- checked c'est précoché-->
+        <input type="checkbox" name="cyclisme" id="cyclisme" checked="checked" />
+        <label for="cyclisme">Cyclisme</label></br></br>
+        <!--Une seule case à cocher-->
+        Quelle viennoiserie préférez-vous?</br>
+        <input type="radio" name="viennoiserie" value="croissant" id="croissant" />
+        <label for="croissant">Les croissants</label></br>
+        <input type="radio" name="viennoiserie" value="chocolat" id="chocolat" checked="checked" />
+        <label for="croissant">Les pains au chocolat</label></br>
+        <input type="radio" name="viennoiserie" value="raisin" id="raisin" />
+        <label for="croissant">Les pains au raisin</label></br></br>
+        Choisissez votre pays
+        <select name="pays" id="pays">
+            <optgroup label="Europe">
+                <option value="France">France</option <option value="Irlande">Irlande</option>
+                <option value="Allemagne">Allemagne</option>
+                <option value="Angleterre">Angleterre</option>
+            </optgroup>
+            <optgroup label="Asie">
+                <option value="Chine">Chine</option>
+            </optgroup>
+            <optgroup label="Amérique">
+                <option value="USA">USA</option>
+            </optgroup>
+        </select></br></br>
+        <!-- Pour envoyer le formulaire vers une page php qui nous manque-->
+        <input type="submit" value="Envoyer votre formulaire" />
+        </p>
+    </form>
+</body>
+
+</html>

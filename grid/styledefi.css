@@ -25,8 +25,7 @@ h1 {
   color: white;
 }
 .advert {
-
-grid-column: 2/4;
+  grid-column: 2/4;
 }
 .navbar {
   list-style: none;
@@ -34,10 +33,10 @@ grid-column: 2/4;
   grid-template-columns: 1fr 1fr 1fr;
 }
 header {
-    grid-area: header;
-    display: grid;
+  grid-area: header;
+  display: grid;
 }
-.newdiv{
+.newdiv {
   display: grid;
   gap: 10px;
   align-items: center;
@@ -51,8 +50,8 @@ nav {
 .content {
   margin: 3rem;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(3,0.5fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 0.5fr);
   grid-area: content;
   gap: 30px;
 }
@@ -70,7 +69,6 @@ footer {
   box-shadow: 0px 0px 20px 3px rgba(207, 207, 207, 1);
 }
 .full-row {
-  
   grid-column: 1/4;
   display: grid;
   grid-template-columns: 1fr 1fr;

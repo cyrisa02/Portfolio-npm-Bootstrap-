@@ -1,97 +1,88 @@
 body {
-    display: flex;
-    padding: 10px;
-    margin: 0;
-    background: #201c29;
-    height: 1200px;
+  display: flex;
+  padding: 10px;
+  margin: 0;
+  background: #201c29;
+  height: 1200px;
 }
 .table {
-    position: fixed;
-  
-    
+  position: fixed;
 }
-.table.no-border tr td, .table.no-border tr th {
-    border-width: 0;
+.table.no-border tr td,
+.table.no-border tr th {
+  border-width: 0;
 }
 
-p {color: white;}
-
+p {
+  color: white;
+}
 
 .coral {
-    height: 100px;
-    width: 100px;
-    background-color: #E9967A;
-
+  height: 100px;
+  width: 100px;
+  background-color: #e9967a;
 }
 
 .lightorange {
-    
-    height: 100px;
-    width: 100px;
-    background-color: #ff7a18;
+  height: 100px;
+  width: 100px;
+  background-color: #ff7a18;
 }
 
 .velvet {
-    height: 100px;
-    width: 100px;
-    background-color: #800080;
+  height: 100px;
+  width: 100px;
+  background-color: #800080;
 }
 
 .pink {
-    height: 100px;
-    width: 100px;
-    background-color: #DB7093;
+  height: 100px;
+  width: 100px;
+  background-color: #db7093;
 }
 
 .orange {
-    height: 100px;
-    width: 100px;
-    background-color:#F4AF60; 
+  height: 100px;
+  width: 100px;
+  background-color: #f4af60;
 }
 
 .turquoise {
-    height: 100px;
-    width: 100px;
-    background-color:#20B2AA; 
+  height: 100px;
+  width: 100px;
+  background-color: #20b2aa;
 }
 
 .blueinside {
-    height: 100px;
-    width: 100px;
-    background-color:#004040; 
+  height: 100px;
+  width: 100px;
+  background-color: #004040;
 }
 
 .blue {
-    height: 100px;
-    width: 100px;
-    background-color:#4682B4; 
+  height: 100px;
+  width: 100px;
+  background-color: #4682b4;
 }
 
 .green {
-    height: 100px;
-    width: 100px;
-    background-color:#80FF00; 
+  height: 100px;
+  width: 100px;
+  background-color: #80ff00;
 }
 
 .icon {
-    
-    color: rgba(244, 175, 96,0.4);
+  color: rgba(244, 175, 96, 0.4);
 }
 
-
-
 .grey {
-     
-    height: 100px;
-    width: 100px;
-    background-color:#666;
-
+  height: 100px;
+  width: 100px;
+  background-color: #666;
 }
 
 .black {
-     
-    height: 100px;
-    width: 100px;
-    background-color:#201c29;
-
+  height: 100px;
+  width: 100px;
+  background-color: #201c29;
 }

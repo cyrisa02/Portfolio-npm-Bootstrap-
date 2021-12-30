@@ -1,55 +1,54 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    font-family: "montserrat";
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "montserrat";
 }
 /*met le body en rouge, à la moité de ma feuille à droite*/
-body{
-    background:#ec24ee;
+body {
+  background: #ec24ee;
 }
 /*met en vert */
-.back{
-    background:linear-gradient(90deg,yellow, red, blue);
-    width:80%;
-    height:80%;
-    position: absolute;
+.back {
+  background: linear-gradient(90deg, yellow, red, blue);
+  width: 80%;
+  height: 80%;
+  position: absolute;
 }
 
-.back-content{
-    color: #0000FF;
-    text-align: center;
-    width: 50%;
+.back-content {
+  color: #0000ff;
+  text-align: center;
+  width: 50%;
 }
-           
+
 /*centre  les logos */
-.middle{
-    position:absolute;
-    top:50%;
-    left:30%;
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 30%;
 }
 
 /*Position des logos par rapport à l'écrit voir vidéo*/
-.sm{
-    margin: 20px 0;
+.sm {
+  margin: 20px 0;
 }
 
 /*Espacement des logos + cht de couleur+création des ronds + grosseur*/
 /*radius à 50% c'est un cercle*/
-.sm a{
-   display: inline-flex;
-   width:80px;
-   height: 80px;
-   justify-content: center;
-   align-content: center;
-   color:#2c3e50;
-   font-size: 50px;
-   transition: 0.4s;
-   border-radius: 40%;
+.sm a {
+  display: inline-flex;
+  width: 80px;
+  height: 80px;
+  justify-content: center;
+  align-content: center;
+  color: #2c3e50;
+  font-size: 50px;
+  transition: 0.4s;
+  border-radius: 40%;
 }
 
-.sm a:hover{
-    background: #2c3e50;
-    color: white;
+.sm a:hover {
+  background: #2c3e50;
+  color: white;
 }
-
