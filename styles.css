@@ -5,6 +5,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -18123,6 +18124,7 @@ fieldset:disabled .btn {
   height: 100vh;
   width: 100vw;
   position: absolute;
+  font-family: 'Roboto', sans-serif;
 }
 
 .home:after {
@@ -18199,7 +18201,7 @@ fieldset:disabled .btn {
 .home .home-main .main-content h1, .home .home-main .main-content .h1 {
   font-size: 3.7rem;
   position: relative;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: black;
   /*ai mis du green"*/
 }
