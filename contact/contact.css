@@ -1,4 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#target {
+  display: flex;
+  width: 300px;
+  text-align: left;
+  animation: color 30s alternate infinite;
+  perspective: 200px;
+  transform: translateX(26px);
+}
+.word {
+  position: absolute;
+}
+@keyframes color {
+  0% {color: blue;}
+  50% {color: #ec006e;}
+  100% {color: blue;}
+}
+.letter {
+  transform: translateZ(200px);
+}
+@keyframes anim {
+  25% {
+    transform: translateZ(0px);
+    opacity: 1;
+  }
+  32% {
+    opacity: 0;
+    transform: translateZ(-280px) translateX(200px);
+  }
+}
+
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* body {
+    min-height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-size: 5rem;
+  } */
 
 
 body {
@@ -12,8 +63,11 @@ body {
     top:50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    
     color:white;
     font-weight: bold;
+    overflow: hidden;
+    /* display: flex; */
 }
 
 form {
@@ -112,4 +166,37 @@ form .pied-formulaire button:hover{
         margin-left: 0px;
     
     }
+}
+
+nav {
+    border-bottom: 1px solid white;
+}
+
+.crumbs ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 10px;
+}
+
+.crumb {
+    display: inline-block;
+}
+
+.crumb a::after {
+    display: inline-block;
+    color: white;
+    content: '>';
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 3px;
+}
+
+.crumb a {
+    color:white;
+}
+
+footer {
+    position: absolute;
+    top:100%;
+    left: 110%;
 }
