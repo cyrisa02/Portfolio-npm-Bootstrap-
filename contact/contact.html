@@ -9,28 +9,7 @@
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="contact.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("user_6vmYdohFPQHStyjZZc7tX");
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
+
     <title>Formulaire de contact</title>
 </head>
 
@@ -39,20 +18,20 @@
         <nav class="crumbs">
             <ul>
                 <li class="crumb"><a href="../index.html">Retour Accueil</a></li>
-                
+
             </ul>
         </nav>
-       
+
     </header>
-    
-    <form id="contact-form">
+    <!-- https://www.emailjs.com/docs/tutorial/creating-contact-form/ -->
+    <form id="contact-form" action="contact.html" method="POST">
         <h1>Contactez-moi</h1>
         <div class="separation"></div>
         <div class="corps-formulaire">
             <div class="gauche">
                 <div class="groupe">
                     <label for="">Votre nom</label>
-                    <input class="input100" type="text" name="fullName" required>
+                    <input class="input100" type="text" name="name" required>
                     <i class="fas fa-user"></i>
                 </div>
                 <div class="groupe">
@@ -71,26 +50,48 @@
             <div class="droite">
                 <div class="groupe">
                     <label>Message</label>
-                    <textarea placeholder="Saisissez votre message..."></textarea>
+                    <textarea placeholder="Saisissez votre message..." name="message"></textarea>
                 </div>
             </div>
         </div>
         <div class="pied-formulaire" align="center">
             <button type="submit">Envoyer le message</button>
         </div>
-        <input type="submit" value="Send">
+        <!-- <input type="submit" value="Send"> -->
     </form>
 
-    <h3>simply</h3><h3 id="target"></h3>
+    <h3>simply</h3>
+    <h3 id="target"></h3>
     <script src="dynamictext.js"></script>
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_6vmYdohFPQHStyjZZc7tX");
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                // this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_3b1ih8y', 'template_zs8tzbd', this)//entrer le n° du service et le n° du template dans Email Template
+                    .then(function () {
+                        console.log('SUCCESS!');
+                    }, function (error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 
     <footer>Copyright
 
         <p>Créateur: C.Gourdon</p>
     </footer>
 
-    
+
 </body>
 
 </html>

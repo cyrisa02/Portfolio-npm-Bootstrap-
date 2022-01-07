@@ -2,3 +2,7 @@ nav {
     position: absolute;
     top:10px;
 }
+
+iframe {
+    border: hidden;
+}
