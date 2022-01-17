@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="styledebase.css">
   <title>C.Gourdon</title>
+  <!-- 1/1 Ligne à insérer AOS-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -249,7 +251,7 @@
     <div class="row">
       <div class="col-12">
         <div class="container px-4 py-5" id="featured-3">
-          <h2 class="pb-2 border-bottom bg-primary bg-gradient text-light rounded"></br>C. Gourdon</h2>
+          <h2 class="pb-2 border-bottom bg-primary bg-gradient text-light rounded " data-aos="fade-right" data-aos-duration="3000"></br>C. Gourdon</h2>
           <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
             <div class="feature col">
               <div class="feature-icon bg-primary bg-gradient opac rounded">
@@ -355,14 +357,14 @@
         <div class="container px-4 py-5" id="hanging-icons">
           <h2 class="pb-2 border-bottom">Evolution et actualités</h2>
           <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 ">
-            <div class="col d-flex align-items-start ">
+            <div class="col d-flex align-items-start " data-aos="fade-right" data-aos-duration="3000">
               <div class="icon-square bg-light text-dark flex-shrink-0 me-3 ">
                 <svg class="bi" width="2em" height="2em">
                   <use xlink:href="#collection" />
                 </svg>
               </div>
-              <div>
-                <h2 class="bg-primary bg-gradient rounded opac">API en cours de réalisation</h2>
+              <div >
+                <h2 class="bg-primary bg-gradient rounded opac" >API en cours de réalisation</h2>
                 <p>En utilisant le concept d' <strong>amélioration continue</strong>, j'ai trois projets d'<strong>API</strong> que je voudrai réaliser pendant le déroulement de ma
                   formation afin d'utiliser l'ensemble de mes connaissances.</p>
                 <p>Je souhaite réaliser un projet avec des apprenants de ma promotion afin de découvrir le travail en
@@ -376,7 +378,7 @@
                 <p>Ce travail demande de la rigueur, de l'autonomie et je serai satisfait de réaliser une partie avec d'autres apprenants.</p>
               </div>
             </div>
-            <div class="col d-flex align-items-start">
+            <div class="col d-flex align-items-start" data-aos="flip-down" data-aos-duration="3000">
               <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
                 <svg class="bi" width="2em" height="2em">
                   <use xlink:href="#cpu-fill" />
@@ -419,7 +421,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col d-flex align-items-start">
+            <div class="col d-flex align-items-start" data-aos="fade-left" data-aos-duration="3000">
               <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
                 <svg class="bi" width="2em" height="2em">
                   <use xlink:href="#cpu-fill" />
@@ -515,5 +517,10 @@
     crossorigin="anonymous"></script>
 
 </body>
+<!-- 2/2 Ligne à insérer AOS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
 
 </html>
