@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  width: 90%; /*laisse des marges comme un padding*/
+  max-width: 1400px;
+  margin: auto; /* centre le container comme du responsive*/
+}
+
+h1 {
+  color: #1a2f42;
+  margin: 20px 0;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed gray;
+}
+
+h1 span {
+  display: block; /* les uns à la suite*/
+}
+
+h1 span:nth-child(1) {
+  font-weight: normal;
+  color: #ed5d34;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid: gap 30px;
+  margin: 80px 0;
+}
+
+.card-wrapper {
+  position: relative;
+  min-height: 350px;
+  perspective: 2000px; /*l'élément ne bouge pas, c'est les enfants qui bougent*/
+  perspective-origin: top;
+}
+
+.card-wrapper:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card {
+  position: relative;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  color: white;
+  font-weight: bold;
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    border-radius: 8px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.card-front{
+    background-color: #ed5d34;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-wrapper:nth-child(even) .card-front {
+    background-color: #1a2f42;
+}
+
+.card-front p {
+    font-size: 25px;
+    line-height: 35px;
+
+}
+
+.arrow-icon {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+.card-price span {
+    font-size: 45px;
+}
+
+.card-back {
+    background-color: #ed5d34;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-wrapper:nth-child(even) .card-back {
+    background-color: #1a2f42;
+} /*tous les chiffres paires even prennent cette couleur, donc un sur deux*/
+
+.card-back a {
+    display: inline-block; /* pratrique pour les boutons*/
+    border-radius: 10px;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: normal;
+    background-color: #fff;
+    font-size: 14px;
+    color:#333;
+    transition: background-color 0.3s ease-out,
+    color 0.3s ease-out;
+
+}
+
+.card-wrapper:nth-child(odd) .card-back a:hover{
+    background-color: #1a2f42;
+    color: #fff;
+}
+
+.card-wrapper:nth-child(even) .card-back a:hover{
+    background-color: #ed5d34;
+    color: #fff;
+}

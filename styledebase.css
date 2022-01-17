@@ -24,15 +24,6 @@ body {
     color: rgba(244, 175, 96,0.4);
 }
 
-.red {
-    background-color: red;
-    height: 60px;
-}
-
-.black {
-    color:white;
-}
-
 .gray {
     color: rgb(65, 54, 54);
 }

@@ -9,7 +9,7 @@ const createLetter = () => {
 
   letter.classList.add("letter");
   letter.style.opacity = '0';
-  letter.style.animation = "anim 8s ease forwards";
+  letter.style.animation = "anim 7s ease forwards";
   letter.textContent = array[wordIndex][letterIndex];
 
   setTimeout(() => {
