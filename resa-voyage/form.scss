@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oxygen", sans-serif;
+}
+
+body {
+  background: url(https://i.ibb.co/tmvQ62T/railay-beach-thailand-4k-wallpaper.jpg)
+    center/cover;
+  min-height: 100vh;
+  text-align: center;
+  color: #3e51bd;
+  overflow: hidden;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+
+  .card {
+    background: rgba(228, 229, 230, 0.8);
+    padding: 3rem;
+    margin: 0 auto;
+    width: 400px;
+    border-radius: 30px;
+    box-shadow: 0 0 3px rgba(51, 51, 51, 0.233);
+
+    >div {
+      margin: 20px 0 40px 0;
+      font-size: 1.1rem;
+      color: black;
+    }
+
+    h2 {
+      text-transform: uppercase;
+      padding: 1.5rem 0 0;
+    }
+    input {
+      background: none;
+      outline: none;
+      border: 1px solid #3e51bd;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 1.15rem;
+      width: 210px;
+      text-align: center;
+    }
+    button {
+      background: #3e51bd;
+      border-radius: 20px;
+      outline: 0;
+      border: none;
+      padding: 1rem;
+      margin: 50px 0 20px;
+      color: white;
+      font-size: 1.3rem;
+      letter-spacing: 1px;
+    }
+  }
+}
