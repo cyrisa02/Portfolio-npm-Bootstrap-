@@ -144,8 +144,8 @@ form .corps-formulaire .droite .groupe textarea{
 
 form .pied-formulaire button{
     margin-top: 10px;
-    background-color: #1e064b;
-    color:whitesmoke;
+    background-color: whitesmoke;
+    color:#1e064b;
     font-size: 15px;
     border:none;
     padding: 10px 20px;
@@ -157,6 +157,10 @@ form .pied-formulaire button{
     transition: transform 0.5s;
 }
 
+.pied-formulaire {
+    margin: 10px;
+    
+}
 /*effet grossissant*/
 
 form .pied-formulaire button:hover{
@@ -212,8 +216,8 @@ footer {
 
 .background {
     position: fixed;
-    width: 100vw;
-    height: 100vh;
+    width: 65vw;
+    height: 45vh;
     top: 0;
     left: 0;
     background: #3E1E68;
